@@ -1,0 +1,12 @@
+#import <experimental/asm>
+
+using namespace experimental::asm /* avoid experimental::asm::asm { ... } */
+
+program :: action() {
+    asm {
+        "mov eax, ebx",
+        "push eax",
+        "add ebx, eax",
+        "pop ebx"
+    }
+}
