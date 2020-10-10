@@ -13,5 +13,5 @@ static int assembly(ulang_user_mode ctx)
         literal_ctx = literal(ctx);
         __asm__(literal_ctx);
     }
-    return FAILURE
+    return FAILURE;
 }
