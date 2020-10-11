@@ -3,7 +3,7 @@
 using namespace experimental::assembler /* avoid experimental::assembler::asm { ... } */
 
 program :: action() : int {
-    asm {
+    asm intel {
         "mov eax, ebx",
         "push eax",
         "add ebx, eax",
